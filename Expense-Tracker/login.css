@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: rgb(235, 235, 242);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.hr{
+    height: 3px;
+    width: 80%;
+    background-color: #333;
+    margin:5px 0;
+}
+.main-container{
+    background-color: white;
+    width: 550px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.form-group{
+    margin-top: 22px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#loginForm{
+    margin-top: 12px;
+}
+
+.password-wrapper{
+    margin: 15px 0;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+#password{
+    width: 300px;
+}
+
+button{
+    border: none;
+    position: relative;
+    cursor: pointer;
+    right: 22px;
+    background-color: transparent;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.btn button{
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    width: 95px;
+    height: 30px;
+     font-size: larger;
+    font-weight: 700;
+}
+
+input{
+    border: none;
+    background-color: aliceblue;
+    width: 300px;
+    height: 29px;
+    border-radius: 12px;
+    padding-left: 12px;
+    outline: none;
+}
+.signup{
+     display: flex;
+    justify-content: end;
+    margin-right: 12px;
+}

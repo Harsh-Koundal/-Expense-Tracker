@@ -20,7 +20,8 @@ p,
 table {
     font-weight: 400;
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
 }
 
@@ -92,6 +93,7 @@ main {
     width: 150px;
     padding: 12px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .expenses {
@@ -224,11 +226,41 @@ tr:hover {
     background: #f9f9f9;
     z-index: 1;
 }
-.exp{
+
+.exp {
     list-style: none;
     display: none;
 
 
+}
+
+.income-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    width: 300px;
+}
+
+.income-form input,
+.income-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.income-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 @media(max-width:1300px) {
@@ -242,19 +274,21 @@ tr:hover {
     .right {
         margin-top: 20px;
     }
+
     .right {
         max-width: min-content;
         height: max-content;
         margin-bottom: 30px;
     }
-   
-    .chart-wrapper{
+
+    .chart-wrapper {
         width: 200px;
         height: 200px;
     }
-    .legend{
+
+    .legend {
         height: min-content;
-        
+
     }
 }
 
@@ -297,58 +331,64 @@ tr:hover {
         padding: 12px 5px;
         border-bottom: 1px solid #eee;
     }
+
     .right {
         max-width: min-content;
         height: max-content;
         margin-bottom: 30px;
     }
-   
-    .chart-wrapper{
+
+    .chart-wrapper {
         width: 200px;
         height: 200px;
     }
-    .legend{
+
+    .legend {
         height: min-content;
-        
+
     }
 }
-@media(max-width:620px) {
-    nav ul{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #212ea0;
-    z-index: 100;
-    width: 200px;
-    padding-top: 70px;
-    transition: 0.5s;
-    display: block;
-    visibility: hidden;
-}
-nav ul li{
-    display: block;
-    margin: 25px 40px ;
-}
 
-.menu-icon{
-    display: block;
-    width: 30px;
-    cursor: pointer;
-    height: 23px;
-    z-index: 100;
-    margin-left: 15px;
-}
-.exp{
-    display: block;
-}
+@media(max-width:620px) {
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212ea0;
+        z-index: 100;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        display: block;
+        visibility: hidden;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 40px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        height: 23px;
+        z-index: 100;
+        margin-left: 15px;
+    }
+
+    .exp {
+        display: block;
+    }
 }
 
 @media(max-width:420px) {
-    .chart-wrapper{
+    .chart-wrapper {
         width: 180px;
     }
-    .spendings .all{
+
+    .spendings .all {
         padding: 15px;
     }
 }
